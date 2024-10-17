@@ -8,3 +8,5 @@ export 'package:myapp/Componnent/logo.dart';
 export 'package:myapp/Componnent/searchbar.dart';
 export 'package:myapp/Componnent/category.dart';
 export 'package:myapp/utils/categoryutils.dart';
+export 'package:myapp/Componnent/Circlsavatar.dart';
+export 'package:myapp/Componnent/card.dart';

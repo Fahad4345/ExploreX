@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/import/imports.dart';
 
 class Circleavatar extends StatefulWidget {
-  const Circleavatar({super.key});
+  final String title;
+  final String imagepath;
+  Circleavatar({super.key, required this.title, required this.imagepath});
 
   @override
   State<Circleavatar> createState() => _CircleavatarState();
@@ -10,11 +13,16 @@ class Circleavatar extends StatefulWidget {
 class _CircleavatarState extends State<Circleavatar> {
   @override
   Widget build(BuildContext context) {
-  return Container(
-      height: 100,
-      width:100,
-      decoration: const BoxDecoration(
-          color: Colors.red,shape: BoxShape.circle),
+    return Container(
+      child: Column(
+           
+        children: [
+        CircleAvatar(
+        backgroundImage: AssetImage(widget.imagepath),
+      ),
+      Text(widget.title, style: const TextStyle(),)
+      ]),
     );
+    
   }
 }

@@ -17,11 +17,15 @@ class Category extends StatefulWidget {
 class _categoryState extends State<Category> {
   @override
   Widget build(BuildContext context) {
-    return  Column(
-      children: [CircleAvatar(
-        backgroundImage:AssetImage(widget.imagepath),), 
-        Text(widget.title)
-        ],
+    return  Container(
+      margin: EdgeInsets.only( right: 40),
+      child: Column(
+        
+        children: [CircleAvatar(
+          backgroundImage:AssetImage(widget.imagepath),), 
+          Text(widget.title)
+          ],
+      ),
     );
   }
 }
